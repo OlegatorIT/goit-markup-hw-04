@@ -111,7 +111,7 @@ body {
   color: var(--white-color-text);
 }
 
-.header .nav-list .active {
+.header .nav-list .current {
   color: var(--active-color);
 }
 
@@ -138,7 +138,7 @@ body {
 
 .nav-contact {
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 
 .nav-contact .contact {
@@ -176,6 +176,8 @@ body {
   background-position: center;
   background-size: cover;
   padding: 200px 0;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .hero-title {
@@ -216,30 +218,22 @@ body {
 .qualities-list {
   display: flex;
   gap: 30px;
-  text-align: center;
 }
 
-.box-qualities {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-}
 
 .section-qualities {
   padding: 94px 0;
 }
 
 
-.section-qualities .icon-list {
-  display: flex;
-  gap: 30px;
-  margin: 0 auto;
-}
-
 .section-qualities .item {
   background: #F5F4FA;
   border-radius: 4px;
-  padding: 25px 100px;
+  display: flex;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  align-items: center;
 
 }
 
@@ -249,6 +243,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--secondary-text-color);
+  margin-top: 30px;
 }
 
 .qualities-text {
@@ -390,7 +385,7 @@ body {
   fill: var(--icon-primary-color);
 }
 
-.customers-item {
+.customers-link {
   border: 1px solid var(--icon-primary-color);
   border-radius: 4px;
   width: 170px;
@@ -401,13 +396,13 @@ body {
 }
 
 
-.customers-item:hover,
-.customers-item:focus {
+.customers-link:hover,
+.customers-link:focus {
   border: 1px solid var(--active-color);
 }
 
-.customers-item:hover .customers-icon,
-.customers-item:focus .customers-icon {
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon {
   fill: var(--active-color);
 }
 
@@ -553,8 +548,8 @@ body {
   gap: 30px;
 }
 
-.examples-list-item:hover{
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.examples-list-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .examples-list img {
